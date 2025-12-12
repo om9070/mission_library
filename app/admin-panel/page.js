@@ -114,7 +114,7 @@ export default function AdminPanel() {
       </button>
 
       {loader ? (
-        <div class="loader">
+        <div className="loader">
           <div data-glitch="Loading..." className="glitch text-5xl">
             Loading...
           </div>

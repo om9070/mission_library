@@ -23,8 +23,14 @@ const AdmitCardSearch = () => {
 
 
                 const data = res.data.records;
+                if (data === null) {
+                    setLoading(false);
+                    return toast.error("Admit card not found !")
+
+                }
 
                 generatePDF(data);
+
             } catch (err) {
                 setError("No record found!");
             }
@@ -109,7 +115,7 @@ const AdmitCardSearch = () => {
         <div style={{ width: 400, margin: "0 auto", marginTop: 100 }} className="h-150">
             <h2>Download Admit Card</h2>
             <input
-                type="text"
+                type="number"
                 placeholder="Enter Mobile No"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}

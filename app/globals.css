@@ -78,7 +78,7 @@ input {
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
 }
 
@@ -394,15 +394,45 @@ footer p {
 }
 
 
-.dashboard {
+/* .dashboard {
     background:
-        /* linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
         url("../public/home1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
+} */
+
+
+
+.dashboard {
+    background: url("../public/home1.png");
+    background-size: cover;         /* Cover the entire container */
+    background-position: center;    /* Center the image */
+    background-repeat: no-repeat;
+    /* min-height: 100vh;               */
+    width: 100%;
+    object-fit: cover;
 }
+
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .dashboard {
+        background-position: top;
+        background-size: contain;   /* or 'cover' based on design */
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .dashboard {
+        background-size: cover;
+    }
+}
+
+
+
 .title {
   background: linear-gradient(180deg, #c90a3a 0%, #261fdc 100%);
   -webkit-background-clip: text;
@@ -483,7 +513,7 @@ footer p {
   }
 
   .nav-links.open {
-    max-height: 300px; /* enough to show all links */
+    max-height: 400px; /* enough to show all links */
   }
 
   .nav-toggle {

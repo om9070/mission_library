@@ -25,7 +25,6 @@ export default function Navbar() {
           <li><Link className={getpath === '/faqs' ? "active-color" : ""} href="/faqs">FAQS</Link></li>
           <li><Link className={getpath === '/contact' ? "active-color" : ""} href="/contact">Contact</Link></li>
            <li><Link className={getpath === '/admit-card' ? "active-color" : ""} href="/admit-card">Get Admit Card</Link></li>
-
         </ul>
 
         <div className="nav-toggle" onClick={toggleMenu}>

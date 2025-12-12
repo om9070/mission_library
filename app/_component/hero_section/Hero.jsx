@@ -54,22 +54,22 @@
 
 //   return (
 //     <>
-//       <section class="bg-white dashboard lg:grid lg:h-screen lg:place-content-center dark:bg-gray-900">
-//         <div class="mx-auto w-screen max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
-//           <div class="mx-auto  text-center mt-6">
-//             <h1 class="text-4xl font-serif  sm:text-8xl  title">
+//       <section className="bg-white dashboard lg:grid lg:h-screen lg:place-content-center dark:bg-gray-900">
+//         <div className="mx-auto w-screen max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+//           <div className="mx-auto  text-center mt-6">
+//             <h1 className="text-4xl font-serif  sm:text-8xl  title">
 //               Welcome to
-//               <strong class="text-indigo-600"> Mission </strong>
+//               <strong className="text-indigo-600"> Mission </strong>
 //               Library
 //             </h1>
 
-//             <p class="mt-3 text-xl text-pretty text-yellow-700 sm:text-2xl dark:text-red-500 bg-amber-50 rounded-2xl">
+//             <p className="mt-3 text-xl text-pretty text-yellow-700 sm:text-2xl dark:text-red-500 bg-amber-50 rounded-2xl">
 //               Mission Library – Empowering Students for Competitive Success  
 //             </p>
 
-//             <div class="mt-4 flex justify-center gap-4 sm:mt-6" onClick={() => setIsOpen(true)}>
+//             <div className="mt-4 flex justify-center gap-4 sm:mt-6" onClick={() => setIsOpen(true)}>
 //               <a
-//                 class="inline-block rounded border px-3 py-1.5 border-indigo-600 bg-indigo-600 sm:px-5 sm:py-3 font-medium text-white shadow-sm transition-colors hover:bg-indigo-700"
+//                 className="inline-block rounded border px-3 py-1.5 border-indigo-600 bg-indigo-600 sm:px-5 sm:py-3 font-medium text-white shadow-sm transition-colors hover:bg-indigo-700"
 //                 href="#"
 //               >
 //                 Apply Online
@@ -205,13 +205,13 @@ export default function Hero() {
       <section className="bg-white dashboard lg:grid lg:h-screen lg:place-content-center dark:bg-gray-900">
         <div className="mx-auto w-screen max-w-7xl px-4 py-16">
           <div className="mx-auto text-center mt-6">
-            <h1 className="text-4xl font-serif sm:text-8xl title">
+            <h1 className="text-3xl font-serif sm:text-8xl title">
               Welcome to
               <strong className="text-indigo-600"> Mission </strong>
               Library
             </h1>
 
-            <p className="mt-3 text-xl text-yellow-700 bg-amber-50 rounded-2xl">
+            <p className="mt-3 text-sm text-yellow-700 bg-amber-50 rounded-2xl sm:text-xl">
               Mission Library – Empowering Students for Competitive Success
             </p>
 
@@ -219,10 +219,10 @@ export default function Hero() {
               className="mt-4 flex justify-center"
               onClick={() => setIsOpen(true)}
             >
-              <a className="px-5 py-3 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700 cursor-pointer">
+              <p className="px-5 py-3 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700 cursor-pointer">
                 Apply Online
                 <span className="text-amber-300 px-2">(Competitive examination)</span>
-              </a>
+              </p>
             </div>
           </div>
         </div>
@@ -318,9 +318,9 @@ export default function Hero() {
                   </div>
 
                   {loader ?
-                    <div class="liquid-loader">
-                      <div class="loader-track">
-                        <div class="liquid-fill"></div>
+                    <div className="liquid-loader">
+                      <div className="loader-track">
+                        <div className="liquid-fill"></div>
                       </div>
                     </div>
                     : <button
